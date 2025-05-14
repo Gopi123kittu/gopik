@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>J Gopi Krishna | Python Developer</title>
+  <!-- Devicon for tech logos -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
+
+<!-- Font Awesome for fallback logos -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .nav-link {
+      color: white !important;
+    }
+    .nav-link:hover {
+      color: #0d6efd !important;
+    }
+    section {
+      padding: 80px 0;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .profile-img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .skills-list {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      position: relative;
+    }
+    .skills-list li {
+      background-color: #f8f9fa;
+      padding: 10px 20px;
+      border-radius: 30px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .experience-item {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .company-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 40px;
+      padding: 20px 0;
+      scroll-behavior: smooth;
+    }
+    .company-slider img {
+      height: 60px;
+      object-fit: contain;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+    .company-slider img:hover {
+      filter: grayscale(0%);
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">J Gopi Krishna</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#companies" class="nav-link">Companies</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="d-flex align-items-center bg-dark text-white" style="min-height: 100vh;" data-aos="fade-up">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center">
+    
+    <!-- Left content: Text and Python code -->
+    <div class="p-4 bg-secondary rounded shadow-lg text-light" style="max-width: 600px;">
+      <h2 class="section-title text-white">About Me</h2>
+      <p>Hello! 👋 I'm a passionate Python backend developer with 12+ years of experience building fast, secure, and scalable web apps using frameworks like Django, Flask, and FastAPI. I love solving real-world problems through clean and maintainable code.</p>
+      
+      <div class="bg-dark p-3 mt-4 rounded" style="font-family: monospace; font-size: 0.95rem;">
+        <span style="color: #9cdcfe;">def</span> <span style="color: #dcdcaa;">who_am_i</span>():<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">return</span> <span style="color: #ce9178;">"J Gopi Krishna"</span><br><br>
+        <span style="color: #9cdcfe;">print</span>(<span style="color: #dcdcaa;">who_am_i</span>())  <span style="color: #6a9955;"># Outputs: J Gopi Krishna</span>
+      </div>
+    </div>
+
+    <!-- Right: Profile Image -->
+    <div class="mt-4 mt-md-0">
+      <img src="https://picsum.photos/300" class="profile-img" alt="Profile Picture">
+    </div>
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<!-- <section id="skills" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>Django</li>
+      <li>Flask</li>
+      <li>REST API</li>
+      <li>SQL</li>
+      <li>Git & GitHub</li>
+      <li>Docker</li>
+      <li>FastAPI</li>
+      <li>PostgreSQL</li>
+      <li>Redis</li>
+    </ul>
+  </div>
+</section> -->
+<section id="skills" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="row justify-content-center g-4">
+
+      <div class="col-6 col-md-3 text-center">
+        <i class="devicon-python-plain colored display-4"></i>
+        <p class="mt-2">Python</p>
+      </div>
+
+      <div class="col-6 col-md-3 text-center">
+        <i class="devicon-django-plain colored display-4"></i>
+        <p class="mt-2">Django</p>
+      </div>
+
+      <div class="col-6 col-md-3 text-center">
+        <i class="devicon-flask-original-wordmark display-4" style="color: #000;"></i>
+        <p class="mt-2">Flask</p>
+      </div>
+
+      <div class="col-6 col-md-3 text-center">
+        <i class="devicon-fastapi-plain colored display-4"></i>
+        <p class="mt-2">FastAPI</p>
+      </div>
+
+      <div class="col-6 col-md-3 text-center">
+        <i class="devicon-postgresql-plain colored display-4"></i>
+        <p class="mt-2">PostgreSQL</p>
+      </div>
+
+      <div class="col-6 col-md-3 text-center">
+        <i class="devicon-mysql-plain colored display-4"></i>
+        <p class="mt-2">MySQL</p>
+      </div>
+
+      <div class="col-6 col-md-3 text-center">
+        <i class="devicon-git-plain colored display-4"></i>
+        <p class="mt-2">Git</p>
+      </div>
+
+      <div class="col-6 col-md-3 text-center">
+        <i class="devicon-docker-plain colored display-4"></i>
+        <p class="mt-2">Docker</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Experience Section -->
+<section id="experience" style="background: linear-gradient(to bottom right, #f7f9fc, #e3ecf9);" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title text-center">Experience</h2>
+    <div class="row gy-4">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+          <div class="mb-3 text-primary"><i class="fas fa-building fa-2x"></i></div>
+          <h5 class="fw-bold">Medmix</h5>
+          <p class="text-muted">Python Developer (2022 - Present)</p>
+          <p>Developed scalable REST APIs and integrated cloud-based services using Django, Docker, Cloud.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+          <div class="mb-3 text-success"><i class="fas fa-building fa-2x"></i></div>
+          <h5 class="fw-bold">IBM</h5>
+          <p class="text-muted">Software Engineer (2021 - 2022)</p>
+          <p>Worked on Data analytics Project where to grab data from different sources and streamline the data</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+          <div class="mb-3 text-warning"><i class="fas fa-building fa-2x"></i></div>
+          <h5 class="fw-bold">HPE</h5>
+          <p class="text-muted">Python Developer (2018 - 2021)</p>
+          <p>Worked on internal automation tools using Python and integrated third-party APIs.
+            Worked on Django projects, Integrated Elasticsearch database into the project.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+          <div class="mb-3 text-danger"><i class="fas fa-building fa-2x"></i></div>
+          <h5 class="fw-bold">NTT DATA</h5>
+          <p class="text-muted">Intern (2017 - 2018)</p>
+          <p>Supported development teams with testing, debugging, and documenting backend workflows.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+          <div class="mb-3 text-info"><i class="fas fa-building fa-2x"></i></div>
+          <h5 class="fw-bold">Mphasis</h5>
+          <p class="text-muted">Senior Python Developer (2016-2017)</p>
+          <p>Worked on Django project for running automated scripts processes for servers SaaS tools.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+          <div class="mb-3 text-secondary"><i class="fas fa-building fa-2x"></i></div>
+          <h5 class="fw-bold">Lintel Technologies</h5>
+          <p class="text-muted">Python Developer (2014-2016)</p>
+          <p>Worked on Chat Bot project by supporting django based scripts and REST APIs</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+          <div class="mb-3 text-dark"><i class="fas fa-building fa-2x"></i></div>
+          <h5 class="fw-bold">Coresonant Systems Pvt Ltd</h5>
+          <p class="text-muted">Junior Developer (2012 - 2014)</p>
+          <p>Built internal Python based desktop applications and developed RFID based projects.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Companies Section -->
+<section id="companies" class="bg-light py-5" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title">Companies I Worked With</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      
+      <div class="col">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Hewlett Packard Enterprise (HPE)</h5>
+            <p class="card-text">Worked on backend automation and API integrations for enterprise services.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Mphasis</h5>
+            <p class="card-text">Contributed to backend architecture and performance optimization of web applications.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Lintel Technologies</h5>
+            <p class="card-text">Led backend development of chat bot application using Django and REST APIs.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Medmix</h5>
+            <p class="card-text">Built Web applications for the customers and medical project applciations using Django and REST API's.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">NTT DATA</h5>
+            <p class="card-text">Worked on enterprise solutions and contributed to global API rollout projects.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="bg-light" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Email: <a href="mailto:yourname@example.com">jonnadagopikrishna@gmail.com</a></p>
+    <p>
+      <a href="https://github.com/yourusername" target="_blank" class="me-3"><i class="fab fa-github fa-lg"></i></a>
+      <a href="https://www.linkedin.com/in/gopi-krishna-093bab5b/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 J Gopi krishna | All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true });
+</script>
+</body>
+</html>
